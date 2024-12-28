@@ -1,5 +1,48 @@
 # Changelog
 
+## [3.0.0](https://github.com/DrPsychick/helm-charts/compare/mailu-v2.1.2...mailu-3.0.0) (2024-12-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace mailu clamav container with official container ([#350](https://github.com/DrPsychick/helm-charts/issues/350))
+
+### Features
+
+* add extraContainers to helm chart in order to allow users to inject sidecar-containers to each component ([#344](https://github.com/DrPsychick/helm-charts/issues/344)) ([369a6cd](https://github.com/DrPsychick/helm-charts/commit/369a6cd3c17c9734d44e74857f96a77700228a40))
+* add MAILU_HELM_CHART environment variable ([#312](https://github.com/DrPsychick/helm-charts/issues/312)) ([e26ffd7](https://github.com/DrPsychick/helm-charts/commit/e26ffd7c70a8788db93cb48cbf48d51a33a8eb8a))
+* Add proxyAuth section to values to configure PROXY_AUTH_* env vars ([04825ef](https://github.com/DrPsychick/helm-charts/commit/04825ef1457ae34e2b0471fefd04397df4ba4a01))
+* add securityContext and podSecurityContext options ([#263](https://github.com/DrPsychick/helm-charts/issues/263)) ([6f9e25b](https://github.com/DrPsychick/helm-charts/commit/6f9e25bba7c7f69e84af6f6cd13fb7648bb5fe0c))
+* add the possibility to disable RSPAMD ([#337](https://github.com/DrPsychick/helm-charts/issues/337)) ([bb5a3ab](https://github.com/DrPsychick/helm-charts/commit/bb5a3ab6cb919f6334973430ad1175775f8ac829))
+* added Tika support ([#356](https://github.com/DrPsychick/helm-charts/issues/356)) ([34ef061](https://github.com/DrPsychick/helm-charts/commit/34ef061e9f2c3a906dc198b9fe430361f3a3554f))
+* bump mailu version to 2.0.22 ([#296](https://github.com/DrPsychick/helm-charts/issues/296)) ([17d3b94](https://github.com/DrPsychick/helm-charts/commit/17d3b94558f795e0f7f43804f51e23285f8c8075))
+* bump mailu version to 2.0.30 ([#314](https://github.com/DrPsychick/helm-charts/issues/314)) ([4884ca4](https://github.com/DrPsychick/helm-charts/commit/4884ca4d0e030038f262d569b15bca550b404539))
+* bump mailu version to 2024.06.3 ([#351](https://github.com/DrPsychick/helm-charts/issues/351)) ([d35ecce](https://github.com/DrPsychick/helm-charts/commit/d35ecce77e4c31d379fc9632e57d3db73b53eeb8))
+* dynamic shields ([0651568](https://github.com/DrPsychick/helm-charts/commit/065156800f661c522a7d89a2c77b107a5f859356))
+* enable API support ([#358](https://github.com/DrPsychick/helm-charts/issues/358)) ([0d313fa](https://github.com/DrPsychick/helm-charts/commit/0d313fa5f307f076d3389075d3dac189383895ad))
+* replace mailu clamav container with official container ([#350](https://github.com/DrPsychick/helm-charts/issues/350)) ([b45bd55](https://github.com/DrPsychick/helm-charts/commit/b45bd55fe61013a14ff2576eda86ff956bf1055c))
+* several fixes for Mailu 2024.06 support ([#354](https://github.com/DrPsychick/helm-charts/issues/354)) ([3fa16db](https://github.com/DrPsychick/helm-charts/commit/3fa16db195f3361388c4b9cee329c0e67970dc9a))
+* upgrade mailu version to 2.0.20 ([#294](https://github.com/DrPsychick/helm-charts/issues/294)) ([d7fc85c](https://github.com/DrPsychick/helm-charts/commit/d7fc85cbc4b68a496a7f9ddc2fdc50d85fac4206))
+
+
+### Bug Fixes
+
+* added PROXY_PROTOCOL environment variable ([#375](https://github.com/DrPsychick/helm-charts/issues/375)) ([a80d638](https://github.com/DrPsychick/helm-charts/commit/a80d6384331928444810be37918fc5533220330e))
+* Allow setting custom NodePorts for externalService ([#383](https://github.com/DrPsychick/helm-charts/issues/383)) ([0b1a9cd](https://github.com/DrPsychick/helm-charts/commit/0b1a9cda3448f2735460f2aa1c79b50a8f6d38c0))
+* bump mailu to 2024.06.6 ([#359](https://github.com/DrPsychick/helm-charts/issues/359)) ([cfc2b7b](https://github.com/DrPsychick/helm-charts/commit/cfc2b7bf2425ac6e05574da48ee13b29b0307d32))
+* bump mailu version to 2024.06.10 ([#365](https://github.com/DrPsychick/helm-charts/issues/365)) ([b10d394](https://github.com/DrPsychick/helm-charts/commit/b10d39463d033c47c82d8b3d1c53acac94c2d926))
+* bumped Mailu version to 2.0.10 ([f70466c](https://github.com/DrPsychick/helm-charts/commit/f70466cde9d11891593d0ecb25b5b1d3bf69a11d))
+* Fix issue with redis subpath needing to be relative ([#376](https://github.com/DrPsychick/helm-charts/issues/376)) ([0fd99a6](https://github.com/DrPsychick/helm-charts/commit/0fd99a668bcb32f710bdbce729f38074895d8273))
+* fix postgresql initdb script ([#258](https://github.com/DrPsychick/helm-charts/issues/258)) ([04b803a](https://github.com/DrPsychick/helm-charts/commit/04b803a83e89f17a7fc247ebec0b4cd06fbbc73a))
+* fix redis service name when using Mailu as a subchart ([ae7f804](https://github.com/DrPsychick/helm-charts/commit/ae7f804ffbf3a945471353a65ee75c55f822e829))
+* fixed dovecot probes ([b1b0405](https://github.com/DrPsychick/helm-charts/commit/b1b0405681350a85464cf3d69c3bc28355f7d8c5))
+* fixed probes ([#289](https://github.com/DrPsychick/helm-charts/issues/289)) ([76c333c](https://github.com/DrPsychick/helm-charts/commit/76c333c7682536141262255754b74f1065609f17))
+* fixed readme and generator ([98c21c7](https://github.com/DrPsychick/helm-charts/commit/98c21c79a68d0aef21c2022d2eb562e232456086))
+* only include roudcube secrets if webmail.enabled is set to true ([#272](https://github.com/DrPsychick/helm-charts/issues/272)) ([5e652c0](https://github.com/DrPsychick/helm-charts/commit/5e652c0b2b5db10032320e7b9e805c711cc6853f))
+* readinessProbe.enabled has no effect ([b33d602](https://github.com/DrPsychick/helm-charts/commit/b33d60238aaf83fe322c1d100e3b9d4b2cae6ecd))
+* remove duplicate 'get secrets' in notes ([#345](https://github.com/DrPsychick/helm-charts/issues/345)) ([1d3cec3](https://github.com/DrPsychick/helm-charts/commit/1d3cec3f72f372dd0e1116c54ab64557fcfb9f7e))
+* set default permanentSessionLifetime to 30 days instead of 30 hours ([180109f](https://github.com/DrPsychick/helm-charts/commit/180109f96ff3f9bea39890998a65ab501690cba8))
+
 ## [2.1.2](https://github.com/Mailu/helm-charts/compare/mailu-2.1.1...mailu-2.1.2) (2024-12-22)
 
 
