@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.2.1](https://github.com/DrPsychick/helm-charts/compare/mailu-v2.2.2...mailu-2.2.1) (2025-05-29)
+
+
+### Features
+
+* ✨ move chart to subdir charts ([#389](https://github.com/DrPsychick/helm-charts/issues/389)) ([f76c60a](https://github.com/DrPsychick/helm-charts/commit/f76c60a540a5693fbadd51e3ce21d47e83106abb))
+
+
+### Bug Fixes
+
+* fix proxy protocol check ([#414](https://github.com/DrPsychick/helm-charts/issues/414)) ([5304600](https://github.com/DrPsychick/helm-charts/commit/5304600aac1d55b4c2ac19123d7793909e7d84e0))
+
+
+### Miscellaneous Chores
+
+* trigger release ([41e7f53](https://github.com/DrPsychick/helm-charts/commit/41e7f53869be97ebf1f99785f3728965d5bee4d8))
+
 ## [2.2.2](https://github.com/Mailu/helm-charts/compare/mailu-2.2.1...mailu-2.2.2) (2025-05-25)
 
 
