@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.2.1](https://github.com/DrPsychick/helm-charts/compare/mailu-v2.3.1...mailu-2.2.1) (2025-08-31)
+
+
+### Features
+
+* ✨ move chart to subdir charts ([#389](https://github.com/DrPsychick/helm-charts/issues/389)) ([f76c60a](https://github.com/DrPsychick/helm-charts/commit/f76c60a540a5693fbadd51e3ce21d47e83106abb))
+* bump mailu version to 2024.06.41 ([#431](https://github.com/DrPsychick/helm-charts/issues/431)) ([ad72d37](https://github.com/DrPsychick/helm-charts/commit/ad72d3779f2601cc1c52b02b04130fbe3b6cc78a))
+
+
+### Bug Fixes
+
+* bump mailu version to 2024.06.43 ([#436](https://github.com/DrPsychick/helm-charts/issues/436)) ([a04015a](https://github.com/DrPsychick/helm-charts/commit/a04015a870bcd44bf6de018af9fcff0ac7f908d1))
+* fix proxy protocol check ([#414](https://github.com/DrPsychick/helm-charts/issues/414)) ([5304600](https://github.com/DrPsychick/helm-charts/commit/5304600aac1d55b4c2ac19123d7793909e7d84e0))
+* pin tika image to 3.2.2.0-full ([#435](https://github.com/DrPsychick/helm-charts/issues/435)) ([921e66b](https://github.com/DrPsychick/helm-charts/commit/921e66b8e7e3a2dd28d4781950d5069fe27a9745))
+* remove deprecated common template (fixes [#449](https://github.com/DrPsychick/helm-charts/issues/449)) ([#451](https://github.com/DrPsychick/helm-charts/issues/451)) ([b262be4](https://github.com/DrPsychick/helm-charts/commit/b262be4a7f827fa3aee855f39ffb327548f276f1))
+* remove env vars from clamav, oletools and tika pods ([#428](https://github.com/DrPsychick/helm-charts/issues/428)) ([ea26d85](https://github.com/DrPsychick/helm-charts/commit/ea26d85d400f223dddd63a6e322f4e27984b07de))
+* restrict tika and oletools internet access ([#432](https://github.com/DrPsychick/helm-charts/issues/432)) ([c112e9a](https://github.com/DrPsychick/helm-charts/commit/c112e9aab486b0c36e0aa181d1bd36f4f10d3e51))
+* update bitnami dependencies and use bitnamilegacy repo ([#434](https://github.com/DrPsychick/helm-charts/issues/434)) ([e5f55f2](https://github.com/DrPsychick/helm-charts/commit/e5f55f2c2941a4b10aa90f4af36131ea256b7a53))
+* update tika (CVE-2025-54988) ([#430](https://github.com/DrPsychick/helm-charts/issues/430)) ([270a2d0](https://github.com/DrPsychick/helm-charts/commit/270a2d09c477a06fcdb7e1760f3eb6913e889fc6))
+
+
+### Miscellaneous Chores
+
+* trigger release ([41e7f53](https://github.com/DrPsychick/helm-charts/commit/41e7f53869be97ebf1f99785f3728965d5bee4d8))
+
 ## [2.3.1](https://github.com/Mailu/helm-charts/compare/mailu-2.3.0...mailu-2.3.1) (2025-08-31)
 
 
