@@ -1,5 +1,44 @@
 # Changelog
 
+## [2.2.1](https://github.com/DrPsychick/helm-charts/compare/mailu-v2.6.1...mailu-2.2.1) (2025-12-05)
+
+
+### Features
+
+* add metrics monitoring for rspamd and dovecot ([#461](https://github.com/DrPsychick/helm-charts/issues/461)) ([cf3c2fa](https://github.com/DrPsychick/helm-charts/commit/cf3c2fad5f0ad9a9a4669e321cc9718cf2dc9cc7))
+* bump mailu version to 2024.06.41 ([#431](https://github.com/DrPsychick/helm-charts/issues/431)) ([ad72d37](https://github.com/DrPsychick/helm-charts/commit/ad72d3779f2601cc1c52b02b04130fbe3b6cc78a))
+* **externalService:** allow to set labels ([#470](https://github.com/DrPsychick/helm-charts/issues/470)) ([e906264](https://github.com/DrPsychick/helm-charts/commit/e906264e6765d3ad1ea8daf9cfa9e9149518ba9c)), closes [#275](https://github.com/DrPsychick/helm-charts/issues/275)
+* support mta-sts configuration with overrides ([#396](https://github.com/DrPsychick/helm-charts/issues/396)) ([051c3b2](https://github.com/DrPsychick/helm-charts/commit/051c3b21208658915469e276cf6941a147b3a59d))
+
+
+### Bug Fixes
+
+* Allow set externalIPs ([#499](https://github.com/DrPsychick/helm-charts/issues/499)) ([b30a1a3](https://github.com/DrPsychick/helm-charts/commit/b30a1a32c43aea7618c471fe3154e28e13026dcd))
+* bump mailu version to 2024.06.43 ([#436](https://github.com/DrPsychick/helm-charts/issues/436)) ([a04015a](https://github.com/DrPsychick/helm-charts/commit/a04015a870bcd44bf6de018af9fcff0ac7f908d1))
+* clamav volumeClaimTemplates use matchLabels ([#522](https://github.com/DrPsychick/helm-charts/issues/522)) ([fa88206](https://github.com/DrPsychick/helm-charts/commit/fa88206e531d7e5e4e937f26809a0ccf1480bae2))
+* **container:** update image docker.io/apache/tika ( 3.2.2.0 ➔ 3.2.3.0 ) ([#465](https://github.com/DrPsychick/helm-charts/issues/465)) ([995b7eb](https://github.com/DrPsychick/helm-charts/commit/995b7eb67985d2e1004c39fed0adf7d61d0c6b4a))
+* **docs:** readme OCD ([#381](https://github.com/DrPsychick/helm-charts/issues/381)) ([6147f84](https://github.com/DrPsychick/helm-charts/commit/6147f8495ceef6bfa789b4e11cb2dbbdb74f8276))
+* Don't set empty vars instead of setting them to empty strings ([#475](https://github.com/DrPsychick/helm-charts/issues/475)) ([9ddb8b8](https://github.com/DrPsychick/helm-charts/commit/9ddb8b82d2493ceaced510f3e37b7d5e5765ed37))
+* ensure PORTS value is quoted ([#515](https://github.com/DrPsychick/helm-charts/issues/515)) ([2d3ce2d](https://github.com/DrPsychick/helm-charts/commit/2d3ce2d82455bcaaa57dc81c2259a21ec2869a42))
+* fix proxy protocol check ([#414](https://github.com/DrPsychick/helm-charts/issues/414)) ([5304600](https://github.com/DrPsychick/helm-charts/commit/5304600aac1d55b4c2ac19123d7793909e7d84e0))
+* **gh-actions lint-and-test:** correct indentation ([#492](https://github.com/DrPsychick/helm-charts/issues/492)) ([a03411d](https://github.com/DrPsychick/helm-charts/commit/a03411d19b6ebfb466187178b0aa90dd7f6d20fc)), closes [#490](https://github.com/DrPsychick/helm-charts/issues/490)
+* **github-release:** update release mailu/mailu ( 2024.06.43 ➔ 2024.06.44 ) ([ab06eb6](https://github.com/DrPsychick/helm-charts/commit/ab06eb643829c869d8aea9756aefccf732129924))
+* **github-release:** update release mailu/mailu ( 2024.06.44 ➔ 2024.06.45 ) ([#504](https://github.com/DrPsychick/helm-charts/issues/504)) ([40479b4](https://github.com/DrPsychick/helm-charts/commit/40479b4e8af7a47b8cda74cff1d8220fca66abe6))
+* pin tika image to 3.2.2.0-full ([#435](https://github.com/DrPsychick/helm-charts/issues/435)) ([921e66b](https://github.com/DrPsychick/helm-charts/commit/921e66b8e7e3a2dd28d4781950d5069fe27a9745))
+* prevent overzealous whitespace removal ([#509](https://github.com/DrPsychick/helm-charts/issues/509)) ([5a65b6b](https://github.com/DrPsychick/helm-charts/commit/5a65b6b2609d3beb3625fd2556f94fc5429ffede)), closes [#508](https://github.com/DrPsychick/helm-charts/issues/508)
+* remove deprecated common template (fixes [#449](https://github.com/DrPsychick/helm-charts/issues/449)) ([#451](https://github.com/DrPsychick/helm-charts/issues/451)) ([b262be4](https://github.com/DrPsychick/helm-charts/commit/b262be4a7f827fa3aee855f39ffb327548f276f1))
+* remove env vars from clamav, oletools and tika pods ([#428](https://github.com/DrPsychick/helm-charts/issues/428)) ([ea26d85](https://github.com/DrPsychick/helm-charts/commit/ea26d85d400f223dddd63a6e322f4e27984b07de))
+* restrict tika and oletools internet access ([#432](https://github.com/DrPsychick/helm-charts/issues/432)) ([c112e9a](https://github.com/DrPsychick/helm-charts/commit/c112e9aab486b0c36e0aa181d1bd36f4f10d3e51))
+* **serviceMonitor:** labelSelector declaration ([#472](https://github.com/DrPsychick/helm-charts/issues/472)) ([3b03faa](https://github.com/DrPsychick/helm-charts/commit/3b03faa3c3df7e9ff5915bd8d30a42d1d1491562)), closes [#471](https://github.com/DrPsychick/helm-charts/issues/471)
+* type of db ExtraEnvVars values ([#466](https://github.com/DrPsychick/helm-charts/issues/466)) ([64a068d](https://github.com/DrPsychick/helm-charts/commit/64a068d5171d69d02d4587fd948cd4d2abca0af9))
+* update bitnami dependencies and use bitnamilegacy repo ([#434](https://github.com/DrPsychick/helm-charts/issues/434)) ([e5f55f2](https://github.com/DrPsychick/helm-charts/commit/e5f55f2c2941a4b10aa90f4af36131ea256b7a53))
+* update tika (CVE-2025-54988) ([#430](https://github.com/DrPsychick/helm-charts/issues/430)) ([270a2d0](https://github.com/DrPsychick/helm-charts/commit/270a2d09c477a06fcdb7e1760f3eb6913e889fc6))
+
+
+### Miscellaneous Chores
+
+* trigger release ([41e7f53](https://github.com/DrPsychick/helm-charts/commit/41e7f53869be97ebf1f99785f3728965d5bee4d8))
+
 ## [2.6.1](https://github.com/Mailu/helm-charts/compare/mailu-2.6.0...mailu-2.6.1) (2025-11-06)
 
 
